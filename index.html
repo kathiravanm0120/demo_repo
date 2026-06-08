@@ -1,219 +1,179 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-        crossorigin="anonymous" />
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    <title>ZenFlow Yoga</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/7a4b62b0a4.js"
         crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
-
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-
-        * {
-            font-family: "Roboto", sans-serif;
-        }
-
-        .main {
-            background-image: url('https://assets.ccbp.in/frontend/static-website/yoga-bg.png');
-            background-size: cover;
-            background-position: center;
-            min-height: 100vh;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .main-head {
-            color: #132d84;
-            font-size: 28px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        .main-para {
-            color: #323f4b;
-            font-size: 16px;
-            margin-top: 15px;
-        }
-
-        .main-img {
-            width: 250px;
-            max-width: 100%;
-        }
-
-        .buttons {
-            background-color: #253263;
-            color: #ffe2ab;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 8px;
-            margin-top: 15px;
-        }
-
-        .buttons:hover {
-            background-color: #1c254d;
-        }
-
-        .inpage {
-            background-color: #ffedcb;
-            min-height: 100vh;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .in-head {
-            color: #132d84;
-            font-size: 28px;
-            font-weight: bold;
-            margin: 15px 0;
-        }
-
-        .in-card {
-            background-color: #ffe2ab;
-            border-radius: 15px;
-            padding: 12px;
-            text-align: left;
-            color: #253263;
-            margin-bottom: 15px;
-            align-items: center;
-        }
-
-        .card-img {
-            width: 90px;
-            height: 90px;
-            margin-right: 12px;
-        }
-
-        .in-card-text h3 {
-            font-size: 20px;
-            margin-bottom: 5px;
-        }
-
-        .in-card-text p {
-            font-size: 14px;
-            margin: 0;
-        }
-    </style>
 </head>
 
 <body>
 
-    
-    <div class="main" id="sectionMain">
-        <div>
-            <h1 class="main-head">
-                Discover the yogi life on the Yoga Experience Platform
+    <!-- Background Glow -->
+
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+        <h2 class="logo">ZenFlow</h2>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#types">Yoga</a></li>
+            <li><a href="#stats">Stats</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+        </ul>
+
+        <button class="nav-btn">
+            Join Now
+        </button>
+    </nav>
+
+    <!-- Hero -->
+
+    <section class="hero"
+        id="home">
+
+        <div class="hero-text reveal">
+            <h1>
+                Find Inner Peace
+                Through Yoga
             </h1>
 
-            <img class="main-img"
-                src="https://assets.ccbp.in/frontend/static-website/yoga-girl-with-headphones-img.png"
-                alt="Yoga Girl" />
-
-            <p class="main-para">
-                Yoga poses strengthen and open tight areas of the body.
+            <p>
+                Experience futuristic wellness,
+                mindfulness, and body transformation
+                through immersive yoga sessions.
             </p>
 
-            <button class="btn buttons"
-                onclick="display('sectionIn')">
-                Get Started
+            <button class="main-btn">
+                Start Journey
             </button>
         </div>
-    </div>
 
-    
-    <div class="inpage" id="sectionIn">
+        <div class="hero-image reveal">
+            <img id="floatingImage"
+                src="https://assets.ccbp.in/frontend/static-website/yoga-girl-with-headphones-img.png"
+                alt="Yoga Girl">
+        </div>
+    </section>
 
-        <img class="main-img"
-            src="https://assets.ccbp.in/frontend/static-website/yoga-girl-without-headphones-img.png"
-            alt="Yoga Girl" />
+    <!-- Yoga Types -->
 
-        <h1 class="in-head">Types of Yoga</h1>
+    <section class="types"
+        id="types">
 
-        <div class="d-flex flex-column">
+        <h2 class="section-title reveal">
+            Explore Yoga Types
+        </h2>
 
-           
-            <div class="in-card d-flex flex-row">
-                <img class="card-img"
-                    src="https://assets.ccbp.in/frontend/static-website/yoga-card1-img.png"
-                    alt="Acro Yoga" />
+        <div class="cards">
 
-                <div class="in-card-text">
-                    <h3>Acro Yoga</h3>
-                    <p>
-                        It stretches and relaxes your body, improves stamina,
-                        and enhances memory.
-                    </p>
-                </div>
+            <div class="card reveal">
+                <img src="https://assets.ccbp.in/frontend/static-website/yoga-card1-img.png">
+                <h3>Acro Yoga</h3>
+                <p>
+                    Improve strength and flexibility.
+                </p>
             </div>
 
-           
-            <div class="in-card d-flex flex-row">
-                <img class="card-img"
-                    src="https://assets.ccbp.in/frontend/static-website/yoga-card2-img.png"
-                    alt="Vinyasa Yoga" />
-
-                <div class="in-card-text">
-                    <h3>Vinyasa Yoga</h3>
-                    <p>
-                        It improves flexibility, strengthens muscles,
-                        and helps reduce stress.
-                    </p>
-                </div>
+            <div class="card reveal">
+                <img src="https://assets.ccbp.in/frontend/static-website/yoga-card2-img.png">
+                <h3>Vinyasa Yoga</h3>
+                <p>
+                    Build stamina and reduce stress.
+                </p>
             </div>
 
-          
-            <div class="in-card d-flex flex-row">
-                <img class="card-img"
-                    src="https://assets.ccbp.in/frontend/static-website/yoga-card3-img.png"
-                    alt="Hatha Yoga" />
-
-                <div class="in-card-text">
-                    <h3>Hatha Yoga</h3>
-                    <p>
-                        It helps improve posture, balance, and overall body
-                        strength.
-                    </p>
-                </div>
+            <div class="card reveal">
+                <img src="https://assets.ccbp.in/frontend/static-website/yoga-card3-img.png">
+                <h3>Hatha Yoga</h3>
+                <p>
+                    Improve posture and balance.
+                </p>
             </div>
 
-           
-            <div class="in-card d-flex flex-row">
-                <img class="card-img"
-                    src="https://assets.ccbp.in/frontend/static-website/yoga-card4-img.png"
-                    alt="Kundalini Yoga" />
-
-                <div class="in-card-text">
-                    <h3>Kundalini Yoga</h3>
-                    <p>
-                        It boosts mental clarity, energy, and emotional
-                        well-being.
-                    </p>
-                </div>
+            <div class="card reveal">
+                <img src="https://assets.ccbp.in/frontend/static-website/yoga-card4-img.png">
+                <h3>Kundalini Yoga</h3>
+                <p>
+                    Increase mental clarity and energy.
+                </p>
             </div>
 
         </div>
+    </section>
 
-        <button class="btn buttons"
-            onclick="display('sectionMain')">
-            Back
-        </button>
-    </div>
+    <!-- Stats -->
 
-    <script type="text/javascript"
-        src="https://new-assets.ccbp.in/frontend/content/static-ccbp-ui-kit/static-ccbp-ui-kit.js">
-    </script>
+    <section class="stats"
+        id="stats">
+
+        <div class="stat-card reveal">
+            <h1>10K+</h1>
+            <p>Happy Yogis</p>
+        </div>
+
+        <div class="stat-card reveal">
+            <h1>500+</h1>
+            <p>Daily Sessions</p>
+        </div>
+
+        <div class="stat-card reveal">
+            <h1>95%</h1>
+            <p>Stress Reduced</p>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+
+    <section class="testimonials"
+        id="testimonials">
+
+        <h2 class="section-title reveal">
+            What People Say
+        </h2>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial reveal">
+                <p>
+                    “ZenFlow changed my life.
+                    I feel calm and focused.”
+                </p>
+
+                <h4>- Sarah</h4>
+            </div>
+
+            <div class="testimonial reveal">
+                <p>
+                    “The futuristic design and yoga
+                    sessions are amazing!”
+                </p>
+
+                <h4>- David</h4>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 
 </body>
 
